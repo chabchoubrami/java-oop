@@ -1,18 +1,25 @@
 package com.mycompany;
 
 public class Main {
-    public static void main(String[] args) {
-        Student student1 = new Student("John", "123"), student2 = new Student("Jane", "1234");
-        System.out.println(student2.isLoggedIn(2, "1234"));
-        System.out.println(student2.toString());
+    static int x = 10;
+    int y = 11;
 
-        String password = "12345678";
-        if (Student.validatePassword(password)) {
-            Student student = new Student("John", password);
-            System.out.println("Student created successfully");
-            System.out.println(student.isLoggedIn(3, password));
-        } else {
-            System.out.println("Please enter a valid password.");
-        }
+    static {
+        x = 20;
+        System.out.println("This is a static block");
+    }
+    static {
+        x = 30;
+        System.out.println("This is a static block 2");
+    }
+    public static void main(String[] args) {
+        Main m = new Main();
+        System.out.println(x);
+        System.out.println(m.y);
+
+        Student student = new Student("Sara", "123");
+
+        OuterClass.InnerClass ic = new OuterClass.InnerClass();
+        ic.print();
     }
 }
