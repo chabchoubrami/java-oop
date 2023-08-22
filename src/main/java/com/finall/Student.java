@@ -30,18 +30,18 @@ public final class Student {
     }
 }
 
-class GraduatedStudent extends Student {
-    public GraduatedStudent(int STUDENT_ID, String name, int yeahOfBirth) {
-        super(STUDENT_ID, name, yeahOfBirth);
-    }
-
-    // ERROR because final keyword is used
-    @Override
-    public String toString() {
-        return "GraduatedStudent{" +
-                "STUDENT_ID=" + STUDENT_ID +
-                ", name='" + name + '\'' +
-                ", yeahOfBirth=" + yeahOfBirth +
-                '}';
-    }
-}
+//class GraduatedStudent extends Student {
+//    public GraduatedStudent(int STUDENT_ID, String name, int yeahOfBirth) {
+//        super(STUDENT_ID, name, yeahOfBirth);
+//    }
+//
+//    // ERROR because final keyword is used
+//    @Override
+//    public String toString() {
+//        return "GraduatedStudent{" +
+//                "STUDENT_ID=" + STUDENT_ID +
+//                ", name='" + name + '\'' +
+//                ", yeahOfBirth=" + yeahOfBirth +
+//                '}';
+//    }
+//}
