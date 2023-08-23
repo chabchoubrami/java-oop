@@ -1,6 +1,6 @@
 package com.interfacee;
 
-public class CarV1 implements SelffDrivable, Movable {
+public class CarV1 implements SelffDrivable, Movable, MarkerInterface {
     private int x, y;
     private int numberOfPassengers;
 
@@ -40,5 +40,10 @@ public class CarV1 implements SelffDrivable, Movable {
     @Override
     public void drive() {
         System.out.println("Driving v1");
+    }
+
+    @Override
+    public void newMethod() {
+        System.out.println("New Method");
     }
 }

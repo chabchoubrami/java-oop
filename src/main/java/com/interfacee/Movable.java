@@ -5,4 +5,7 @@ public interface Movable {
     void moveDown();
     void moveLeft();
     void moveRight();
+    static void newMethod(){
+        System.out.println("aaa");
+    };
 }

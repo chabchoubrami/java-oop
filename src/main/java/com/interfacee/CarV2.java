@@ -41,4 +41,9 @@ public class CarV2 implements SelffDrivable, Movable {
     public void drive() {
         System.out.println("Driving v2");
     }
+
+    @Override
+    public void newMethod() {
+        SelffDrivable.super.newMethod();
+    }
 }
